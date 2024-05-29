@@ -1,3 +1,4 @@
+## steps show how to create this setup
 
 git init
 npm init -y
@@ -11,7 +12,7 @@ npm i -D nodemon
 npx tsc --init
 
 add this code in tsconfig.json
-=====================
+```
 {
   "compilerOptions": {
     "target": "ES2020",
@@ -27,9 +28,7 @@ add this code in tsconfig.json
     "skipLibCheck": true
   }
 }
-=====================
-
-
+```
 
 
 npm i express 
@@ -44,7 +43,7 @@ npm i prettierPlugin
 npm i @typescript-eslint/parser
 
 add this code in eslint.config.mjs
-=====================
+```
 import globals from 'globals';
 import pluginJs from '@eslint/js';
 import tseslint from 'typescript-eslint';
@@ -80,13 +79,13 @@ export default [
     },
   },
 ];
-=====================
+```
 
 
  
 
 Add .prettierrc file and add these settings
-=====================
+```
 {
   "arrowParens": "avoid",
   "bracketSpacing": true,
@@ -104,7 +103,7 @@ Add .prettierrc file and add these settings
   "trailingComma": "all",
   "useTabs": false
 }
-=====================
+```
 
 Add these in vscode setting.json file for the eslint extension to find the linting error
 
